@@ -44,7 +44,7 @@
 }
 
 .banner {
-    padding: 200px;
+    padding: 200px 20px;
     min-height: 100svh;
     background: url(../img/bg.png) no-repeat center bottom / cover;
 
@@ -56,7 +56,6 @@
 }
 
 .banner__content {
-    max-width: 1160px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -66,7 +65,7 @@
 .banner__title {
     font-family: var(--sh);
     font-weight: 400;
-    font-size: 74px;
+    font-size: clamp(1.25rem, 0.486rem + 3.82vw, 4.625rem);
     line-height: 100%;
     text-transform: uppercase;
     color: var(--white);
@@ -81,12 +80,17 @@
 .banner__desc-slogan {
     font-family: var(--sh);
     font-weight: 400;
-    font-size: 24px;
+    font-size:  24px;
     line-height: 100%;
     color: var(--white);
-    max-width: 984px;
     width: 100%;
+     display: -webkit-box;
+  -webkit-line-clamp: 4; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
+
+
 
 .banner__content-btn {
     display: flex;
@@ -108,4 +112,36 @@
     text-transform: uppercase;
     background-color: transparent;
 
+}
+@media screen and (max-width:956px) {
+   
+    .header__wrap{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 30px;
+
+    }
+    .banner{
+        height: 420px;
+    }
+}
+@media screen and (max-width:668px){
+    .header__nav-list{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .banner__btn {
+        padding: 14px 10px;
+        font-size: 16px;
+    }
+}
+   
+    
+
+@media screen and (max-width:558px){
+.banner__desc-slogan{
+        height: 90%;
+        line-height: 1.4;
+    }
 }

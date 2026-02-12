@@ -26,7 +26,6 @@
 }
 
 .bestsellers__text-slogan {
-    height: 36px;
     margin-top: 40px;
     font-family: var(--sh);
     font-weight: 400;
@@ -64,8 +63,9 @@
 
 .card__content {
     position: absolute;
-    top: 75%;
-    left: 5%;
+     bottom: 100px;  
+    left: 25px;
+    right: 20px;
     transform: translateY(-50%);
     color: var(--white);
     font-size: 24px;
@@ -131,4 +131,12 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     margin-top: 60px;
+}
+@media (max-width: 1488px){
+.bestsellers__grid{
+    grid-template-columns: 1fr ;
+}
+.card__btn{
+    padding: 18px 50px;
+}
 }
