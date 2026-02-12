@@ -1,5 +1,5 @@
 footer{
-     border: 1px solid var(--black);
+     border-top: 1px solid var(--black);
      padding: 120px;
 }
 .footer__nav{
