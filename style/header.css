@@ -1,0 +1,111 @@
+.header {
+    background-color: var(--white);
+   
+}
+
+
+.header__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav-logo {
+    font-family: var(--sh);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.header__nav-list {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+
+.header__nav-list-item-link {
+    font-family: var(--sh);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    color: var(--black);
+}
+
+.header__nav-list-item-link:hover {
+    color: var(--white);
+}
+
+.header__nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.banner {
+    padding: 200px;
+    min-height: 100svh;
+    background: url(../img/bg.png) no-repeat center bottom / cover;
+
+}
+
+.banner__wrap {
+    display: flex;
+    align-items: center;
+}
+
+.banner__content {
+    max-width: 1160px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.banner__title {
+    font-family: var(--sh);
+    font-weight: 400;
+    font-size: 74px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.banner__desc {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.banner__desc-slogan {
+    font-family: var(--sh);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    color: var(--white);
+    max-width: 984px;
+    width: 100%;
+}
+
+.banner__content-btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.banner__btn {
+    max-width: 255px;
+    width: 100%;
+    padding: 26px 106px;
+    border: 2px solid var(--white);
+    outline: none;
+    font-family: var(--sh);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    color: var(--white);
+    text-transform: uppercase;
+    background-color: transparent;
+
+}

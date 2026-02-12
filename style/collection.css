@@ -1,0 +1,92 @@
+
+
+.collection-title{
+margin-bottom: 20px;
+font-family: var(--sh);
+font-weight: 400;
+font-size: 40px;
+line-height: 100%;
+color: var(--black);
+}
+.collection__desc-slogan{
+   margin-bottom: 20px;
+max-width: 696px;
+font-family: var(--sh);
+font-weight: 400;
+font-size: 24px;
+line-height: 100%;
+color: var(--black);
+}
+.collection__text-slogan{
+   margin-bottom: 20px;
+   height: 36px;
+   margin-top: 40px ;
+   font-family: var(--sh);
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+color: var(--gray);
+}
+.product__card{
+   position: relative;
+
+}
+.discount__percentage{
+    position: absolute;
+  top: 20px;
+  left: 20px;
+  background:var(--black);
+  padding:17px 40px ;
+  font-size: 18px;
+  color: var(--white);
+
+}
+.product__card-img {
+  width: 100%;
+  height: 100%;     
+}
+
+.product__card-img img{
+   width: 100%;
+   height: 100%;
+}
+.product__card-desc{
+   position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: var(--white);
+}
+.product__card-desc_title{
+   font-family: var(--sh);
+font-weight: 400;
+font-size: 24px;
+line-height: 100%;
+text-transform: uppercase;
+color: var(--white);
+}
+.product__card-desc-info{
+   font-family: var(--sh);
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+text-transform: uppercase;
+color: var(--white);
+}
+.product__card-price{
+   font-family: var(--sh);
+font-weight: 400;
+font-size: 24px;
+line-height: 100%;
+text-transform: uppercase;
+color: var(--white);
+}
+.collection__grid{
+   display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ grid-auto-rows:340px;
+   gap: 24px;
+}
+.card-fuji{
+   grid-row: 1/3;
+   grid-column: 2;
+}
